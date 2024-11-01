@@ -11,11 +11,11 @@
                 class="text-h5 font-brand"
                 style="color: rgba(255, 255, 255, 0.81)"
             >
-                SiMAS<span style="color: rgba(255, 255, 255, 0.36)">TE</span>N
+                Si<span style="color: rgba(255, 255, 255, 0.36)">ASEP</span>
             </div>
 
             <div class="text-caption text-white" style="line-height: 1">
-                version 3.0.0
+                version 1.0.0
             </div>
         </div>
     </div>

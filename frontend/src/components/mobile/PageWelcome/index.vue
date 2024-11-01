@@ -22,7 +22,7 @@
                     />
 
                     <div class="mt-2 text-h4 font-brand">
-                        SiMAS<span class="sub-color">TEN</span>
+                        Si<span class="sub-color">ASEP</span>
                     </div>
                 </div>
 
@@ -53,10 +53,10 @@
                             class="d-flex justify-center text-grey-darken-1 pb-2"
                         >
                             <div class="text-caption text-uppercase">
-                                version 3.0.0
+                                version 1.0.0
                             </div>
                             <div class="ml-4 text-caption text-uppercase">
-                                Datin BKD &copy; 2024
+                                ULP &copy; 2024
                             </div>
                         </div>
                     </v-col>
