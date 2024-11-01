@@ -27,8 +27,8 @@ html {
     opacity: 0.2;
     left: 0;
     top: 0;
-    margin-left: -36dvw;
-    margin-top: -36dvw;
+    margin-left: 60dvw;
+    margin-top: -26dvw;
     background: linear-gradient(
         90deg,
         rgba(96, 125, 139, 1) 0%,
@@ -45,23 +45,23 @@ html {
 
 .wave:nth-child(2) {
     top: 20dvh;
-    margin-left: -28dvw;
-    margin-top: -28dvw;
+    margin-left: 50dvw;
+    margin-top: -18dvw;
 }
 
 .wave:nth-child(3) {
     top: 15dvh;
-    margin-left: -20dvw;
+    margin-left: 70dvw;
     margin-top: -20dvw;
 }
 
 .playing .wave {
-    border-radius: 16%;
+    border-radius: 36%;
     animation: wave 12000ms infinite linear;
 }
 
 .wave {
-    border-radius: 20%;
+    border-radius: 36%;
     animation: wave 55s infinite linear;
 }
 
@@ -198,7 +198,7 @@ html {
 }
 
 .font-brand {
-    font-family: "Madimi One", serif;
+    font-family: "Lilita One", serif;
     font-weight: 400;
     font-style: normal;
     color: #50585D;

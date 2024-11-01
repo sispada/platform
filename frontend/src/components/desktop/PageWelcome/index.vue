@@ -26,8 +26,8 @@
                                 style="margin-left: -2px"
                             />
 
-                            <div class="ml-2 text-h4 font-brand">
-                                SiMAS<span class="sub-color">TEN</span>
+                            <div class="ml-2 text-h3 font-brand">
+                                Si<span class="sub-color">ASEP</span>
                             </div>
                         </div>
 
