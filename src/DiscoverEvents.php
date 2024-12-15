@@ -1,6 +1,6 @@
 <?php
 
-namespace Sispada\Platform;
+namespace Monoland\Platform;
 
 use SplFileInfo;
 use ReflectionClass;
