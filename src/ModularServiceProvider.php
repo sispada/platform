@@ -20,6 +20,7 @@ use Sispada\Platform\Console\Commands\PlatformMakeImport;
 use Sispada\Platform\Console\Commands\PlatformMakeModule;
 use Sispada\Platform\Console\Commands\PlatformMakePolicy;
 use Sispada\Platform\Console\Commands\PlatformModuleList;
+use Sispada\Platform\Console\Commands\PlatformModulePull;
 use Sispada\Platform\Console\Commands\PlatformModuleSeed;
 use Sispada\Platform\Console\Commands\PlatformMakeCommand;
 use Sispada\Platform\Console\Commands\PlatformMakeReplica;
@@ -28,6 +29,7 @@ use Sispada\Platform\Console\Commands\PlatformMakeFrontend;
 use Sispada\Platform\Console\Commands\PlatformMakeListener;
 use Sispada\Platform\Console\Commands\PlatformMakeResource;
 use Sispada\Platform\Console\Commands\PlatformModuleDelete;
+use Sispada\Platform\Console\Commands\PlatformModuleUpdate;
 use Sispada\Platform\Console\Commands\PlatformMakeMigration;
 use Sispada\Platform\Console\Commands\PlatformModuleInstall;
 use Sispada\Platform\Console\Commands\PlatformModuleMigrate;
@@ -127,7 +129,9 @@ class ModularServiceProvider extends ServiceProvider
                 PlatformModuleInstall::class,
                 PlatformModuleList::class,
                 PlatformModuleMigrate::class,
-                PlatformModuleSeed::class
+                PlatformModulePull::class,
+                PlatformModuleSeed::class,
+                PlatformModuleUpdate::class
             ]);
         }
     }

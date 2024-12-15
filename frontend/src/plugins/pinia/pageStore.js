@@ -6,9 +6,9 @@ import { defineStore } from "pinia";
 
 export const usePageStore = defineStore("pageStore", {
     state: () => ({
-        email: "monoland@dev",
-        password: "P@ssw0rd",
-        password_confirmation: "P@ssw0rd",
+        email: null,
+        password: null,
+        password_confirmation: null,
         forgotPassword: false,
         challengedPassword: false,
         resetFeature: false,
