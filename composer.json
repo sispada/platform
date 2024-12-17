@@ -1,5 +1,5 @@
 {
-    "name": "sispada/platform",
+    "name": "monoland/platform",
     "description": "Siruhay Web Application Platform",
     "type": "library",
     "require": {
