@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Facades\Route;
 use Monoland\Platform\Http\Middleware\Impersonate;
 use Monoland\Platform\Console\Commands\PlatformInstall;
 use Monoland\Platform\Console\Commands\PlatformMakeJob;
