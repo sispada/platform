@@ -33,12 +33,18 @@ export function RequestInstance(url, options) {
     let baseURL = null;
 
     if ("module" in store && "domain" in store.module) {
-        baseURL = `${
-            import.meta.env.VITE_APP_PROTOCOL +
-            "://" +
-            store.module.domain +
-            import.meta.env.VITE_APP_DOMAIN
-        }`;
+        baseURL = store.module.domain
+            ? `${
+                  import.meta.env.VITE_APP_PROTOCOL +
+                  "://" +
+                  store.module.domain +
+                  import.meta.env.VITE_APP_DOMAIN
+              }`
+            : `${
+                  import.meta.env.VITE_APP_PROTOCOL +
+                  "://" +
+                  import.meta.env.VITE_APP_DOMAIN
+              }`;
     } else {
         baseURL = localStorage.getItem("baseURL");
     }
