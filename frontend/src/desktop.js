@@ -2,7 +2,7 @@
 import { registerDesktopPlugins } from "@plugins";
 
 // Style
-import "@styles/settings.css";
+import "@styles/settings.scss";
 
 // Components
 import App from "./App.vue";
