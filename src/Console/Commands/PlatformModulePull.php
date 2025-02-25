@@ -6,14 +6,14 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Symfony\Component\Process\Process;
 
-class PlatformModuleClone extends Command
+class PlatformModulePull extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'module:clone
+    protected $signature = 'module:pull
         {repository}
         {--directory=}
     ';
@@ -23,7 +23,7 @@ class PlatformModuleClone extends Command
      *
      * @var string
      */
-    protected $description = 'Clone module from git-source';
+    protected $description = 'Pull module from git-source';
 
     /**
      * Execute the console command.
@@ -32,19 +32,19 @@ class PlatformModuleClone extends Command
     {
         $directory = $this->option('directory') ?: File::basename($this->argument('repository'));
 
-        if (File::isDirectory(base_path('modules' . DIRECTORY_SEPARATOR . $directory))) {
-            $this->info('module already exists');
+        if (!File::isDirectory(base_path('modules' . DIRECTORY_SEPARATOR . $directory))) {
+            $this->info('module not exists');
             return;
         }
 
         $process = new Process([
             'git',
-            'clone',
-            $this->argument('repository'),
-            $this->option('directory')
+            'pull',
+            'origin',
+            'main'
         ]);
 
-        $process->setWorkingDirectory(base_path() . DIRECTORY_SEPARATOR . 'modules');
+        $process->setWorkingDirectory(base_path() . DIRECTORY_SEPARATOR . 'modules' . DIRECTORY_SEPARATOR . $this->option('directory'));
         $process->run();
     }
 }

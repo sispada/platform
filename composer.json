@@ -1,5 +1,5 @@
 {
-    "name": "sispada/platform",
+    "name": "monoland/platform",
     "description": "Siruhay Web Application Platform",
     "type": "library",
     "require": {
@@ -15,13 +15,13 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Sispada\\Platform\\": "src/"
+            "Monoland\\Platform\\": "src/"
         }
     },
     "extra": {
 		"laravel": {
 			"providers": [
-				"Sispada\\Platform\\ModularServiceProvider"
+				"Monoland\\Platform\\ModularServiceProvider"
 			]
 		}
 	},

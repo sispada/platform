@@ -8,22 +8,22 @@ import { VDateInput } from "vuetify/labs/VDateInput";
 import { VNumberInput } from "vuetify/labs/VNumberInput";
 
 export default createVuetify({
-    components: {
-        VDateInput,
-        VNumberInput,
-    },
+	components: {
+		VDateInput,
+		VNumberInput,
+	},
 
-    icons: {
-        defaultSet: "md",
-        aliases,
-        sets: {
-            md: {
-                component: (props) =>
-                    h(VLigatureIcon, {
-                        ...props,
-                        class: "material-symbols-outlined",
-                    }),
-            },
-        },
-    },
+	icons: {
+		defaultSet: "md",
+		aliases,
+		sets: {
+			md: {
+				component: (props) =>
+					h(VLigatureIcon, {
+						...props,
+						class: "material-symbols-outlined",
+					}),
+			},
+		},
+	},
 });

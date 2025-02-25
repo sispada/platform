@@ -6,6 +6,6 @@ Route::get('/', function () {
     return redirect('https://' . env('SANCTUM_STATEFUL_DOMAINS'));
 });
 
-// Route::get('/{vue_capture?}', function () {
+// Route::fallback(function () {
 //     return view('welcome');
-// })->where('vue_capture', '[\/\w\.-]*');
+// });
