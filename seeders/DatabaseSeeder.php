@@ -12,5 +12,6 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call(\ModuleSystem\Seeders\DatabaseSeeder::class);
+        $this->call(\ModuleProcurement\Seeders\DatabaseSeeder::class);
     }
 }

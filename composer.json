@@ -1,9 +1,9 @@
 {
-    "name": "monoland/platform",
-    "description": "Siruhay Web Application Platform",
+    "name": "siasep/platform",
+    "description": "Monoland Web Application Platform",
     "type": "library",
     "require": {
-        "laravel/framework": "^11.0",
+        "laravel/framework": "^11.31",
         "laravel/sanctum": "^4.0",
         "laravel/fortify": "^1.21",
         "laravel/horizon": "^5.26",
